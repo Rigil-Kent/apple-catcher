@@ -31,18 +31,28 @@ public class AppleTree : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    // Basic movement
+	    
+		MoveTree();
+
+	}
+
+
+
+
+	void MoveTree() {
+		// Basic movement
 		Vector3 pos = transform.position;
 
 		pos.x += speed * Time.deltaTime;
 
 		transform.position = pos;
 
-		// Changing Direction
+
+		// Change Direction
+		if (pos.x < -LeftAndRightEdge) {
+			speed = Mathf.Abs (speed);
+		} else if (pos.x > LeftAndRightEdge) {
+			speed = -Mathf.Abs (speed);
+		}
 	}
-
-
-
-
-
 }
