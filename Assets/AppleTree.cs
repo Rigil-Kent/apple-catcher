@@ -17,10 +17,10 @@ public class AppleTree : MonoBehaviour {
 	public float LeftAndRightEdge = 10f;
 
 	// Chance that the AppleTree will change directions
-	public float chanceToChangeDirections = 0.1f;
+	public float directionChangeChance = 0.1f;
 
 	// Rate at which Apples will be instantiated
-	public float secondsBetweenAppleDrops = 1f;
+	public float secondsBetweenDrops = 1f;
 
 
 
@@ -32,7 +32,17 @@ public class AppleTree : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	    // Basic movement
+		Vector3 pos = transform.position;
+
+		pos.x += speed * Time.deltaTime;
+
+		transform.position = pos;
 
 		// Changing Direction
 	}
+
+
+
+
+
 }
