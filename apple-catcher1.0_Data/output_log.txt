@@ -2,9 +2,9 @@ Mono path[0] = 'C:/Users/bryan.bailey/Documents/GitHub/apple-catcher/apple-catch
 Mono path[1] = 'C:/Users/bryan.bailey/Documents/GitHub/apple-catcher/apple-catcher1.0_Data/Mono'
 Mono config path = 'C:/Users/bryan.bailey/Documents/GitHub/apple-catcher/apple-catcher1.0_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/bryan.bailey/Documents/GitHub/apple-catcher/apple-catcher1.0_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55491
-Multi-casting "[IP] 192.168.119.6 [Port] 55491 [Flags] 2 [Guid] 1166830768 [EditorId] 741641638 [Version] 1048832 [Id] WindowsPlayer(BBAILEY-NBK) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.119.6:55491]
+PlayerConnection initialized network socket : 0.0.0.0 55133
+Multi-casting "[IP] 192.168.56.1 [Port] 55133 [Flags] 2 [Guid] 1694824952 [EditorId] 784636348 [Version] 1048832 [Id] WindowsPlayer(BBAILEY-NBK) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.56.1:55133]
 Initialize engine version: 5.3.4f1 (fdbb5133b820)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -21,14 +21,14 @@ Platform assembly: C:\Users\bryan.bailey\Documents\GitHub\apple-catcher\apple-ca
 Loading C:\Users\bryan.bailey\Documents\GitHub\apple-catcher\apple-catcher1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\bryan.bailey\Documents\GitHub\apple-catcher\apple-catcher1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\bryan.bailey\Documents\GitHub\apple-catcher\apple-catcher1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.042 seconds
+- Completed reload, in  0.043 seconds
 Platform assembly: C:\Users\bryan.bailey\Documents\GitHub\apple-catcher\apple-catcher1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\bryan.bailey\Documents\GitHub\apple-catcher\apple-catcher1.0_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 4320x1350 at -2400,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.508623 ms
+UnloadTime: 0.521167 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 5c8c -> priority: 1 
-  Thread -> id: 5c58 -> priority: 1 
+  Thread -> id: 6754 -> priority: 1 
+  Thread -> id: 4acc -> priority: 1 
