@@ -49,6 +49,12 @@ public class Basket : MonoBehaviour {
 			//  Convert the score back to a string and display it
 			scoreGT.text = score.ToString();
 
+
+			if (score > HighScore.Score) {
+				HighScore.Score = score;
+			}
+
+
 			Debug.Log ("Apple Destroyed! " + score.ToString() + " points to Gryffindor!");
 		}
 	}

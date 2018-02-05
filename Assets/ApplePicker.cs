@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 
 
@@ -59,6 +60,12 @@ public class ApplePicker : MonoBehaviour {
 		// Remove the Basket from the list and destroy the GameObject
 		basketList.RemoveAt(basketIndex);
 		Destroy (tBasketGo);
+
+
+		// if there are no Basket left, restart the game
+		if (basketList.Count == 0) {
+			SceneManager.LoadScene ("_scene0");
+		}
 	}
 
 }
