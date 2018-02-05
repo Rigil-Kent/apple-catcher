@@ -7,8 +7,9 @@ using System.Collections.Generic;
 public class AppleTree : MonoBehaviour {
 	[Header("Set in Inspector")]
 
-	// Prefab for instantiating apples
+	// Prefab(s) for instantiating apples
 	public GameObject applePrefab;
+	public GameObject badApplePrefab;
 
 	// Speed at which the AppleTree moves
 	public float speed = 1f;
@@ -21,6 +22,9 @@ public class AppleTree : MonoBehaviour {
 
 	// Rate at which Apples will be instantiated
 	public float secondsBetweenDrops = 1f;
+
+	// Chance the Apple will be bad
+	public float badAppleChance = 0.3f;
 
 
 	// Global position variable;
@@ -52,9 +56,16 @@ public class AppleTree : MonoBehaviour {
 	void DropApple() {
 
 		GameObject apple = Instantiate<GameObject> (applePrefab);
+		GameObject badApple = Instantiate<GameObject> (badApplePrefab);
 
-		apple.transform.position = transform.position;
-		Invoke ("DropApple", secondsBetweenDrops);
+		if (Random.value < badAppleChance) {
+			badApple.transform.position = transform.position;
+			Invoke ("DropApple", 2f);
+		} else {
+			apple.transform.position = transform.position;
+			Invoke ("DropApple", secondsBetweenDrops);
+		}
+
 	}
 
 
