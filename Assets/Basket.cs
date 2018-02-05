@@ -18,6 +18,18 @@ public class Basket : MonoBehaviour {
 
 
 
+	// find out wtf hit the basket
+	void OnCollisionEnter(Collision coll) {
+		GameObject collidedWith = coll.gameObject;
+
+		if (collidedWith.tag == "Apple") {
+			Destroy (collidedWith);
+			Debug.Log ("Apple Destroyed! 10 points to Gryffindor!");
+		}
+	}
+
+
+
 	// move the basket with the mouse
 	void MouseMovement() {
 		// Get the current screen position of the mouse from Input
